@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Университеты Казахстана</title>
+<style>
+  /* Общие стили */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0b63d6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: top 0.3s;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  main {
+    padding: 100px 20px 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0b63d6;
+  }
+
+  /* Аккордеоны университетов */
+  .university {
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .uni-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .uni-header img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  .uni-header h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #0b63d6;
+  }
+  .uni-content {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    line-height: 1.6;
+  }
+
+  /* Кнопка сравнения */
+  .comparison {
+    margin-top: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .comparison select {
+    padding: 8px 12px;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .comparison-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .comparison-table th, .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  .comparison-table th {
+    background: #0b63d6;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<header id="header">Лучшие университеты Казахстана</header>
+
+<main>
+  <h2>Университеты</h2>
+
+  <!-- Университеты -->
+  <div class="university">
+    <div class="uni-header">
+      <img src="https://diploma-kz.com/wp-content/uploads/2022/06/kazahstansko-britanskij-tehnicheskij-universitet.jpg" alt="КБТУ">
+      <h3>Казахско-Британский технический университет (КБТУ)</h3>
+    </div>
+    <div class="uni-content">
+      <p><strong>Основание:</strong> 2001 год по инициативе Президента Казахстана Нурсултана Назарбаева и Совета Великобритании.</p>
+      <p><strong>Академические направления:</strong> нефть и газ, информационные технологии, энергетика, машиностроение, химическая инженерия, экономика, финансы и управление.</p>
+      <p><strong>Программы:</strong> бакалавриат, магистратура, PhD. Доступны двойные дипломы с LSE, Robert Gordon University и другими зарубежными университетами.</p>
+      <p><strong>Условия поступления:</strong> ЕНТ, сертификат английского (IELTS ≥5.5). Магистратура – диплом бакалавра и английский (IELTS ≥6.0).</p>
+      <p><strong>Стоимость:</strong> бакалавриат ~2–3 млн тг/год, магистратура ~6 405 USD/год.</p>
+      <p><strong>Международные партнерства:</strong> LSE, Женевская бизнес-школа, University of Northampton, Harvard Business School и др.</p>
+    </div>
+  </div>
+
+  <div class="university">
+    <div class="uni-header">
+      <img src="https://www.kimep.kz/about/wp-content/blogs.dir/51/files/2018/02/comission.jpg" alt="KIMEP">
+      <h3>KIMEP University</h3>
+    </div>
+    <div class="uni-content">
+      <p><strong>Основание:</strong> 14 января 1992 года Первым Президентом Казахстана.</p>
+      <p><strong>Академические направления:</strong> бизнес, экономика, юриспруденция, социальные науки, гуманитарные науки.</p>
+      <p><strong>Программы:</strong> бакалавриат, магистратура, PhD. Двойные дипломы с Glasgow, IESEG, Yonsei.</p>
+      <p><strong>Условия поступления:</strong> ЕНТ, английский (TOEFL, IELTS, KEPT), для магистратуры – GMAT/GRE и портфолио.</p>
+      <p><strong>Стоимость:</strong> бакалавриат ~5–6 тыс. USD/год, магистратура ~5,4 тыс. USD/год.</p>
+      <p><strong>Стипендии:</strong> для отличников, победителей олимпиад, президентские гранты.</p>
+    </div>
+  </div>
+
+  <div class="university">
+    <div class="uni-header">
+      <img src="https://kazakhstangid.ru/wp-content/uploads/2023/06/universitety-kazahstana.jpg" alt="КазНУ">
+      <h3>Казахский национальный университет имени аль-Фараби (КазНУ)</h3>
+    </div>
+    <div class="uni-content">
+      <p><strong>Основание:</strong> 1934 год, с 1991 носит имя философа Аль-Фараби.</p>
+      <p><strong>Академические направления:</strong> физико-технические, механико-математические, химические, биологические, геологические, гуманитарные и социальные науки.</p>
+      <p><strong>Программы:</strong> бакалавриат (4 года), магистратура (1–2 года), PhD (3+ года). Более 180 направлений обучения.</p>
+      <p><strong>Условия поступления:</strong> ЕНТ для гранта и контрактного обучения, документы, фотографии, медсправка, для иностранцев – легализованные документы.</p>
+      <p><strong>Стоимость:</strong> бесплатное обучение на гранте, контракт – 1,5–1,9 млн тг/год.</p>
+      <p><strong>Международное сотрудничество:</strong> 418 вузов мира, обмены, стажировки, двойные дипломы.</p>
+    </div>
+  </div>
+
+  <div class="university">
+    <div class="uni-header">
+      <img src="https://www.geografiainfinita.com/wp-content/uploads/2022/05/7988995359_9dcb29a657_b.jpg" alt="Satbayev">
+      <h3>Satbayev University</h3>
+    </div>
+    <div class="uni-content">
+      <p><strong>Основание:</strong> 1934 год как Казахский горно-металлургический институт, современное название с 2018.</p>
+      <p><strong>Академические направления:</strong> инженерные и технические науки: геология, горное дело, ИТ, энергетика, машиностроение, архитектура, транспорт, экология и др.</p>
+      <p><strong>Программы:</strong> бакалавриат, магистратура, PhD, производственные практики и проектная работа в лабораториях.</p>
+      <p><strong>Условия поступления:</strong> ЕНТ, аттестат, дополнительные конкурсы для творческих специальностей, портфолио.</p>
+      <p><strong>Стоимость:</strong> грант – бесплатно, контракт – 2–3 млн тг/год, иностранные студенты – 3–4 тыс. USD/год.</p>
+      <p><strong>Международное сотрудничество:</strong> двойные дипломы (CityUHK), Erasmus+, обмен преподавателей, летние школы.</p>
+    </div>
+  </div>
+
+  <!-- Секция сравнения -->
+  <div class="comparison">
+    <h2>Сравнение университетов</h2>
+    <label>Выберите первый университет:
+      <select id="uni1">
+        <option value="kbtu">КБТУ</option>
+        <option value="kimep">KIMEP</option>
+        <option value="kaznu">КазНУ</option>
+        <option value="satbayev">Satbayev</option>
+      </select>
+    </label>
+    <label>Выберите второй университет:
+      <select id="uni2">
+        <option value="kbtu">КБТУ</option>
+        <option value="kimep">KIMEP</option>
+        <option value="kaznu">КазНУ</option>
+        <option value="satbayev">Satbayev</option>
+      </select>
+    </label>
+
+    <table class="comparison-table" id="comparisonTable">
+      <thead>
+        <tr>
+          <th>Критерий</th>
+          <th>Университет 1</th>
+          <th>Университет 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Год основания</td>
+          <td id="year1"></td>
+          <td id="year2"></td>
+        </tr>
+        <tr>
+          <td>Направления</td>
+          <td id="fields1"></td>
+          <td id="fields2"></td>
+        </tr>
+        <tr>
+          <td>Стоимость</td>
+          <td id="cost1"></td>
+          <td id="cost2"></td>
+        </tr>
+        <tr>
+          <td>Программы</td>
+          <td id="programs1"></td>
+          <td id="programs2"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script>
+  // Аккордеоны
+  const unis = document.querySelectorAll('.university');
+  unis.forEach(uni => {
+    const header = uni.querySelector('.uni-header');
+    header.addEventListener('click', () => {
+      const content = uni.querySelector('.uni-content');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Шапка исчезает при скролле
+  let lastScroll = 0;
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    let currentScroll = window.pageYOffset;
+    if (currentScroll > lastScroll) {
+      header.style.top = '-80px';
+    } else {
+      header.style.top = '0';
+    }
+    lastScroll = currentScroll;
+  });
+
+  // Сравнение
+  const universities = {
+    kbtu: {year: 2001, fields: 'Нефть и газ, ИТ, Энергетика, Машиностроение, Хим. инж., Экономика', cost: 'Бакалавриат 2–3 млн тг, магистратура ~6 405 USD', programs: 'Бакалавриат, магистратура, PhD'},
+    kimep: {year: 1992, fields: 'Бизнес, экономика, юриспруденция, социальные и гуманитарные науки', cost: 'Бакалавриат 5–6 тыс. USD, магистратура 5,4 тыс. USD', programs: 'Бакалавриат, магистратура, PhD'},
+    kaznu: {year: 1934, fields: 'Естественно-научные, технические, гуманитарные и социальные науки', cost: 'Грант бесплатно, контракт 1,5–1,9 млн тг', programs: 'Бакалавриат, магистратура, PhD'},
+    satbayev: {year: 1934, fields: 'Инженерные и технические науки: геология, горное дело, ИТ, Энергетика, Машиностроение, Архитектура, Транспорт', cost: 'Грант бесплатно, контракт 2–3 млн тг, иностранные 3–4 тыс. USD', programs: 'Бакалавриат, магистратура, PhD'}
+  };
+
+  function updateComparison() {
+    const uni1 = document.getElementById('uni1').value;
+    const uni2 = document.getElementById('uni2').value;
+    document.getElementById('year1').innerText = universities[uni1].year;
+    document.getElementById('year2').innerText = universities[uni2].year;
+    document.getElementById('fields1').innerText = universities[uni1].fields;
+    document.getElementById('fields2').innerText = universities[uni2].fields;
+    document.getElementById('cost1').innerText = universities[uni1].cost;
+    document.getElementById('cost2').innerText = universities[uni2].cost;
+    document.getElementById('programs1').innerText = universities[uni1].programs;
+    document.getElementById('programs2').innerText = universities[uni2].programs;
+  }
+
+  document.getElementById('uni1').addEventListener('change', updateComparison);
+  document.getElementById('uni2').addEventListener('change', updateComparison);
+  updateComparison();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
